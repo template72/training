@@ -9,6 +9,7 @@ least writing a nice Wiki.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Building](#building)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -55,6 +56,11 @@ This library is simple to use. Just use the Adder class and perform operations.
 Adder adder = new Adder();
 int result = adder.add(1, 2);
 ```
+
+## Building
+
+Checkout the files and build with Gradle 3.3 on Windows using `gradlew.bat build` or on Linux/Mac using `./gradlew build`.
+There's also a Windows-specific Ant wrapper file build.xml that you can easily use in the Eclipse Ant view.
 
 ## Contributing
 
