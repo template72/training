@@ -14,7 +14,7 @@ least writing a nice Wiki.
 
 ## Installation
 
-Gradle
+Download [the latest JAR](http://jitpack.io/com/github/template72/training/0.1.0/training-0.1.0.jar) or grab via Gradle:
 
 ```gradle
 dependencies {
@@ -27,7 +27,7 @@ repositories {
 }
 ```
 
-Maven
+or Maven:
 
 ```xml
 <dependency>
@@ -44,10 +44,11 @@ Maven
 </repositories>
 ```
 
-[See jitpack.io for other build tools or other versions](https://jitpack.io/#template72/training)
+See [jitpack.io](https://jitpack.io/#template72/training) for other build tools or other versions. training requires at minimum Java 8.
 
 
 ## Usage
+
 This library is simple to use. Just use the Adder class and perform operations.
 
 ```java
@@ -64,4 +65,5 @@ int result = adder.add(1, 2);
 5. Submit a pull request
 
 ## License
+
 MIT
