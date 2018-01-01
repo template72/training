@@ -1,5 +1,4 @@
-[![Release](https://jitpack.io/v/template72/training.svg)]
-(https://jitpack.io/#template72/training)
+[![Release](https://jitpack.io/v/template72/training.svg)](https://jitpack.io/#template72/training)
 
 # training
 
@@ -32,15 +31,15 @@ Maven
 
 ```xml
 <dependency>
-    <groupId>com.github.template72</groupId>
-    <artifactId>training</artifactId>
-    <version>0.1.0</version>
+	<groupId>com.github.template72</groupId>
+	<artifactId>training</artifactId>
+	<version>0.1.0</version>
 </dependency>
 
 <repositories>
 	<repository>
-	    <id>jitpack.io</id>
-	    <url>https://jitpack.io</url>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
 	</repository>
 </repositories>
 ```
