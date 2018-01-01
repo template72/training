@@ -27,8 +27,30 @@ artifacts {
 	archives javadocJar
 }
 
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = '0.7.1.201405082137'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
 test {
     reports {
         html.enabled = true
-    }               
+    }
+    testLogging { // better Travis CI build display of error messages
+        exceptionFormat = 'full'
+        events 'failed', 'standardOut', 'standardError'
+    }
+    jacoco {
+        append = false
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        classDumpFile = file("$buildDir/jacoco/classpathdumps")
+    }
 }
